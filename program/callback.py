@@ -53,8 +53,8 @@ Check out all of my commands in the help Button given below.
                 [
                     InlineKeyboardButton("✚ Click here to Add Me", url=f"https://t.me/{me_bot.username}?startgroup=true")
                 ],[
-                    InlineKeyboardButton("📨 Support", url=f" "),
-                    InlineKeyboardButton("📨 Updates", url=f" ")
+                    InlineKeyboardButton("📨 Support", url=f"https://t.me/{GROUP_SUPPORT}"),
+                    InlineKeyboardButton("📨 Updates", url=f"https://t.me/{UPDATES_CHANNEL}")
                 ],[
                     InlineKeyboardButton("🗂 Commands", callback_data="command_list"),
                     InlineKeyboardButton("📍Info", callback_data="bot_info")
