@@ -74,6 +74,10 @@
         "ALIVE_NAME": {
             "description": "fill with your telegram account nickname/name",
             "required": true
+        },
+        "UPSTREAM_REPO": {
+            "description": "Enter the Bot repo Link",
+            "required": true
         }
     },
     "addons": [],
