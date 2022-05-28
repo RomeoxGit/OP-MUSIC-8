@@ -88,7 +88,7 @@ async def start_(c: Client, message: Message):
     user_id = message.from_user.id
     await add_served_user(user_id)
     await message.reply_photo(
-        photo=f"{START_IMG}"
+        photo=f"{START_IMG}",
         caption=f"""Hello 👋 My name is [{BOT_NAME}]({BOT_URL})
 
 I'm powerful voice chat music player with some awesome and useful features !! 
