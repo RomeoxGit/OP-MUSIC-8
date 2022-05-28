@@ -42,12 +42,11 @@ from config import BOT_NAME
 async def start_set(_, query: CallbackQuery):
     await query.answer("home start")
     await query.edit_message_text(
-        f"""Hi [{query.message.chat.first_name}](tg://user?id={query.message.chat.id}) 👋🏻\n
-💭 [{me_bot.first_name}](https://t.me/{me_bot.username}) is a bot to play music and video in groups, through the new Telegram video chats.
+        f"""Hello [👋]({START_IMG}) My name is [{BOT_NAME}]({BOT_URL})
 
-🕵🏻 Check out all the **Bot's commands** and how they work by clicking on the » 📚 **Commands** button!
+I'm powerful voice chat music player with some awesome and useful features !! 
 
-🧑🏻‍💻 To know how to use this bot, please click on the » ❓ **Basic Guide** button!
+Check out all of my commands in the help Button given below.
 """,
         reply_markup=InlineKeyboardMarkup(
             [
