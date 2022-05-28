@@ -178,7 +178,16 @@ async def user_set(_, query: CallbackQuery):
 async def user_set(_, query: CallbackQuery):
     await query.answer("Bot Information")
     await query.edit_message_text(
-        f""" """,
+        f"""This is [{BOT_NAME}]({BOT_URL}) !!
+
+A Bot developed by a Noob for playing high quality and a music in your groups voice chat. Just add this Bot in your group and promote with needed admin permission to use it properly, and enjoy lag free music in your groups voice chat. More info Given Below :
+
+• Owner : 
+- @Its_romeoo
+
+🔗 Source Code : https://github.com/UnknownMortal/M8N-Music-Bot
+
+Thanks !!""",
         reply_markup=InlineKeyboardMarkup(
             [[InlineKeyboardButton("🔙 Go Back", callback_data="command_list")]]
         ),
