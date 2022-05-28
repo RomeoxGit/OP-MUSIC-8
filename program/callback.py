@@ -113,7 +113,7 @@ async def guide_set(_, query: CallbackQuery):
                 [
                     InlineKeyboardButton("» Quick use Guide «", callback_data="quick_use")
                 ],[
-                    InlineKeyboardButton("🔙 Go Back", callback_data="home_start")
+                    InlineKeyboardButton("🔙 Go Back", callback_data="bot_info")
                 ],
             ]
         ),
@@ -189,7 +189,12 @@ A Bot developed by a Noob for playing high quality and a music in your groups vo
 
 Thanks !!""",
         reply_markup=InlineKeyboardMarkup(
-            [[InlineKeyboardButton("🔙 Go Back", callback_data="command_list")]]
+                [
+                    InlineKeyboardButton("📦 Get Repo", url=f" "),
+                    InlineKeyboardButton("📚 Setup Guide", callback_data="user_guide")
+                ],[
+                    InlineKeyboardButton("⬅️ Back", callback_data="home_start")
+                ],
         ),
     )
 
