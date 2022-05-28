@@ -122,19 +122,19 @@ async def commands_set(_, query: CallbackQuery):
     user_id = query.from_user.id
     await query.answer("commands menu")
     await query.edit_message_text(
-        f"""**Hello [{query.message.chat.first_name}](tg://user?id={query.message.chat.id}) !**
+        f"""**Hello** [{query.message.chat.first_name}](tg://user?id={query.message.chat.id}) !!
 
-» Check out the menu below to read the module information & see the list of available Commands !
+Click on the buttons below for more information. If you're facing any problem in command you can contact my bot owner or ask in support chat.
 
-All commands can be used with (`! / .`) handler""",
+All commands can be used with: /""",
         reply_markup=InlineKeyboardMarkup(
             [
                 [
-                    InlineKeyboardButton("Sudo/Owner", url=f"https://t.me/{GROUP_SUPPORT}"),
-                    InlineKeyboardButton("Admins", url=f"https://t.me/{UPDATES_CHANNEL}")
+                    InlineKeyboardButton("Sudo", callback_data="sudo_command"),
+                    InlineKeyboardButton("Owner", callback_data="owner_command")
                 ],[
-                    InlineKeyboardButton("Everyone", callback_data="command_list"),
-                    InlineKeyboardButton("Extra", callback_data="bot_info")
+                    InlineKeyboardButton("Everyone", callback_data="user_command"),
+                    InlineKeyboardButton("Admins", callback_data="admin_command")
                 ],[
                     InlineKeyboardButton("⬅️ Back", callback_data="home_start")
                 ],
