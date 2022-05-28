@@ -109,7 +109,7 @@ async def guide_set(_, query: CallbackQuery):
                 [
                     InlineKeyboardButton("» Quick use Guide «", callback_data="quick_use")
                 ],[
-                    InlineKeyboardButton("🔙 Go Back", callback_data="bot_info")
+                    InlineKeyboardButton("⬅️ Back", callback_data="bot_info")
                 ],
             ]
         ),
@@ -122,7 +122,7 @@ async def commands_set(_, query: CallbackQuery):
     user_id = query.from_user.id
     await query.answer("commands menu")
     await query.edit_message_text(
-        f"""✨ **Hello [{query.message.chat.first_name}](tg://user?id={query.message.chat.id}) !**
+        f"""**Hello [{query.message.chat.first_name}](tg://user?id={query.message.chat.id}) !**
 
 » Check out the menu below to read the module information & see the list of available Commands !
 
@@ -130,14 +130,13 @@ All commands can be used with (`! / .`) handler""",
         reply_markup=InlineKeyboardMarkup(
             [
                 [
-                    InlineKeyboardButton("👮🏻‍♀️ Admins Commands", callback_data="admin_command"),
+                    InlineKeyboardButton("📨 Support", url=f"https://t.me/{GROUP_SUPPORT}"),
+                    InlineKeyboardButton("📨 Updates", url=f"https://t.me/{UPDATES_CHANNEL}")
                 ],[
-                    InlineKeyboardButton("👩🏻‍💼 Users Commands", callback_data="user_command"),
+                    InlineKeyboardButton("🗂 Commands", callback_data="command_list"),
+                    InlineKeyboardButton("📍Info", callback_data="bot_info")
                 ],[
-                    InlineKeyboardButton("Sudo Commands", callback_data="sudo_command"),
-                    InlineKeyboardButton("Owner Commands", callback_data="owner_command"),
-                ],[
-                    InlineKeyboardButton("🔙 Go Back", callback_data="home_start")
+                    InlineKeyboardButton("⬅️ Back", callback_data="home_start")
                 ],
             ]
         ),
