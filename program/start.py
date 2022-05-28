@@ -34,6 +34,7 @@ from config import (
 
 from config import START_IMG
 from config import BOT_URL
+from config import BOT_NAME
 
 from program import __version__, LOGS
 from pytgcalls import (__version__ as pytover)
