@@ -33,6 +33,9 @@ from config import (
     OWNER_ID,
 )
 
+from config import START_IMG
+from config import BOT_URL
+from config import BOT_NAME
 
 @Client.on_callback_query(filters.regex("home_start"))
 @check_blacklist()
