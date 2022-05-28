@@ -130,11 +130,11 @@ All commands can be used with (`! / .`) handler""",
         reply_markup=InlineKeyboardMarkup(
             [
                 [
-                    InlineKeyboardButton("📨 Support", url=f"https://t.me/{GROUP_SUPPORT}"),
-                    InlineKeyboardButton("📨 Updates", url=f"https://t.me/{UPDATES_CHANNEL}")
+                    InlineKeyboardButton("Sudo/Owner", url=f"https://t.me/{GROUP_SUPPORT}"),
+                    InlineKeyboardButton("Admins", url=f"https://t.me/{UPDATES_CHANNEL}")
                 ],[
-                    InlineKeyboardButton("🗂 Commands", callback_data="command_list"),
-                    InlineKeyboardButton("📍Info", callback_data="bot_info")
+                    InlineKeyboardButton("Everyone", callback_data="command_list"),
+                    InlineKeyboardButton("Extra", callback_data="bot_info")
                 ],[
                     InlineKeyboardButton("⬅️ Back", callback_data="home_start")
                 ],
