@@ -172,6 +172,18 @@ async def user_set(_, query: CallbackQuery):
         ),
     )
 
+# Bot Information 
+@Client.on_callback_query(filters.regex("bot_info"))
+@check_blacklist()
+async def user_set(_, query: CallbackQuery):
+    await query.answer("Bot Information")
+    await query.edit_message_text(
+        f""" """,
+        reply_markup=InlineKeyboardMarkup(
+            [[InlineKeyboardButton("🔙 Go Back", callback_data="command_list")]]
+        ),
+    )
+
 
 @Client.on_callback_query(filters.regex("admin_command"))
 @check_blacklist()
