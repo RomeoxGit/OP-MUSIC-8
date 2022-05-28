@@ -103,8 +103,8 @@ Check out all of my commands in the help Button given below.
                     InlineKeyboardButton("📨 Support", url=f"https://t.me/{GROUP_SUPPORT}"),
                     InlineKeyboardButton("📨 Updates", url=f"https://t.me/{UPDATES_CHANNEL}")
                 ],[
-                    InlineKeyboardButton("🗂 Commands", callback_data=" "),
-                    InlineKeyboardButton("📍Info", callback_data=" ")
+                    InlineKeyboardButton("🗂 Commands", callback_data="command_list"),
+                    InlineKeyboardButton("📍Info", callback_data="bot_info")
                 ],
             ]
         ),
