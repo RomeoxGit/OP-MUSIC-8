@@ -55,6 +55,18 @@
             "description": "if you have channel, then fill the channel username here without @",
             "required": true
         },
+        "BOT_NAME": {
+            "description": "fill with your Bot Name",
+            "required": true
+        },
+        "BOT_URL": {
+            "description": "fill with your Bot URL",
+            "required": true
+        },
+        "START_IMG": {
+            "description": "fill with your Bot start IMG telegraph link",
+            "required": true
+        },
         "OWNER_USERNAME": {
             "description": "fill with your telegram account username without @",
             "required": true
