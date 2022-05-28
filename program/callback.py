@@ -51,17 +51,13 @@ Check out all of my commands in the help Button given below.
         reply_markup=InlineKeyboardMarkup(
             [
                 [
-                    InlineKeyboardButton("➕ Add me to a Group ➕", url=f"https://t.me/{me_bot.username}?startgroup=true")
+                    InlineKeyboardButton("✚ Click here to Add Me", url=f"https://t.me/{me_bot.username}?startgroup=true")
                 ],[
-                    InlineKeyboardButton("❓ Basic Guide", callback_data="user_guide")
+                    InlineKeyboardButton("📨 Support", url=f" "),
+                    InlineKeyboardButton("📨 Updates", url=f" ")
                 ],[
-                    InlineKeyboardButton("📚 Commands", callback_data="command_list"),
-                    InlineKeyboardButton("❤️ Donate", url=f"https://t.me/{OWNER_USERNAME}")
-                ],[
-                    InlineKeyboardButton("👥 Support Group", url=f"https://t.me/{GROUP_SUPPORT}"),
-                    InlineKeyboardButton("📣 Support Channel", url=f"https://t.me/{UPDATES_CHANNEL}")
-                ],[
-                    InlineKeyboardButton("🌐 Source Code", url="https://github.com/levina-lab/video-stream")
+                    InlineKeyboardButton("🗂 Commands", callback_data="command_list"),
+                    InlineKeyboardButton("📍Info", callback_data="bot_info")
                 ],
             ]
         ),
@@ -190,7 +186,7 @@ A Bot developed by a Noob for playing high quality and a music in your groups vo
 Thanks !!""",
         reply_markup=InlineKeyboardMarkup(
                 [
-                    InlineKeyboardButton("📦 Get Repo", url=f" "),
+                    InlineKeyboardButton("📦 Get Repo", url=f"https://t.me/M8N_OFFICIAL/64"),
                     InlineKeyboardButton("📚 Setup Guide", callback_data="user_guide")
                 ],[
                     InlineKeyboardButton("⬅️ Back", callback_data="home_start")
